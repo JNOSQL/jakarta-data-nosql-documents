@@ -24,10 +24,12 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <jakarta.json.bind.version>3.0.0</jakarta.json.bind.version>
         <jakarta.json.version>2.1.1</jakarta.json.version>
-        <tinkerpop.version>3.6.1</tinkerpop.version>
         <jakarta.json.version>2.1.1</jakarta.json.version>
+        <tinkerpop.version>3.6.1</tinkerpop.version>
         <weld.se.core.version>5.1.0.Final</weld.se.core.version>
         <jnosql.version>1.0.0-b6-SNAPSHOT</jnosql.version>
+        <yasson.version>3.0.2</yasson.version>
+        <smallrye.config.version>3.1.1</smallrye.config.version>
     </properties>
 
     <dependencies>
@@ -49,12 +51,7 @@
         <dependency>
             <groupId>org.eclipse</groupId>
             <artifactId>yasson</artifactId>
-            <version>${json.b.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.glassfish</groupId>
-            <artifactId>javax.json</artifactId>
-            <version>${javax.json.version}</version>
+            <version>${yasson.version}</version>
         </dependency>
         <dependency>
             <groupId>io.smallrye.config</groupId>
@@ -62,9 +59,9 @@
             <version>2.13.0</version>
         </dependency>
         <dependency>
-            <groupId>org.eclipse.microprofile.config</groupId>
-            <artifactId>microprofile-config-api</artifactId>
-            <version>2.0.1</version>
+            <groupId>io.smallrye.config</groupId>
+            <artifactId>smallrye-config</artifactId>
+            <version>${smallrye.config.version}</version>
         </dependency>
         <dependency>
             <groupId>org.eclipse.jnosql.mapping</groupId>
