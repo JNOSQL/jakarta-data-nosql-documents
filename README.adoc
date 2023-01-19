@@ -1,6 +1,7 @@
 = Jakarta NoSQL and Data with MongoDB
 
 @otaviojava
+
 == Topics for today:
 
 * Why do we care about data?
