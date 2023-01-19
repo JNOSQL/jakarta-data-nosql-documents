@@ -1,6 +1,5 @@
 package org.jnosql.demo.se;
 
-
 import jakarta.nosql.Column;
 import jakarta.nosql.Entity;
 import jakarta.nosql.Id;
@@ -11,7 +10,7 @@ import java.util.Objects;
 public class Person {
 
     @Id
-    private String nickname;
+    private String id;
 
     @Column
     private String name;
@@ -22,14 +21,14 @@ public class Person {
     Person() {
     }
 
-    public Person(String nickname, String name, String city) {
-        this.nickname = nickname;
+    Person(String id, String name, String city) {
+        this.id = id;
         this.name = name;
         this.city = city;
     }
 
-    public String getNickname() {
-        return nickname;
+    public String getId() {
+        return id;
     }
 
     public String getName() {
@@ -49,18 +48,18 @@ public class Person {
             return false;
         }
         Person person = (Person) o;
-        return Objects.equals(nickname, person.nickname);
+        return Objects.equals(id, person.id);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hashCode(nickname);
+        return Objects.hashCode(id);
     }
 
     @Override
     public String toString() {
         return "Person{" +
-                "nickname='" + nickname + '\'' +
+                "id='" + id + '\'' +
                 ", name='" + name + '\'' +
                 ", city='" + city + '\'' +
                 '}';

@@ -7,9 +7,11 @@ import jakarta.nosql.Id;
 import java.time.Year;
 
 @Entity
-public record Book(@Id String id,
-                   @Column("title") String title,
-                   @Column("category") String category,
-                   @Column("year") Year year,
-                   @Column("edition") int edition) {
+public record Book(@Id String id, @Column("title") String title,
+                   @Column("edition") int edition,
+                   @Column("year") Year year) {
+
+    Book newEdition(String id, Year year) {
+        return new Book(id, this.title, edition+1, year);
+    }
 }
