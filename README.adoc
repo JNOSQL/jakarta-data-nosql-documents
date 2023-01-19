@@ -1,4 +1,4 @@
-= Jakarta NoSQL and Data with ArangoDB
+= Jakarta NoSQL and Data with MongoDB
 
 
 
