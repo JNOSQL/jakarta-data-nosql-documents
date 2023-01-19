@@ -2,9 +2,7 @@ package org.jnosql.demo.se;
 
 import jakarta.enterprise.inject.se.SeContainer;
 import jakarta.enterprise.inject.se.SeContainerInitializer;
-import jakarta.inject.Inject;
 import jakarta.nosql.Template;
-import jakarta.nosql.document.DocumentTemplate;
 
 import java.util.List;
 import java.util.Optional;
@@ -15,10 +13,13 @@ public class App {
 
         try (SeContainer container = SeContainerInitializer.newInstance().initialize()) {
 
-           // Person mary = new Person("mary", "Mary", "Chigaco");
+            Person mary = new Person("mary", "Mary", "Chigaco");
             Person otavio = new Person("otaviojava", "Otavio", "Salvador");
             Person alberto = new Person("alberto", "Alberto", "Salvador");
-            DocumentTemplate template = container.select(DocumentTemplate.class).get();
+            Template template = container.select(Template.class).get();
+
+            template.insert(List.of(mary, otavio, alberto));
+
             List<Person> people = template.select(Person.class)
                     .where("city").eq("Salvador")
                     .orderBy("name").desc().result();
