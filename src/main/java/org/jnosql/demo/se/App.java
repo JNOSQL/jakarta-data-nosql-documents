@@ -36,6 +36,7 @@ public class App {
             System.out.println(heroes);
 
         }
+        System.exit(0);
     }
 
     private App() {
