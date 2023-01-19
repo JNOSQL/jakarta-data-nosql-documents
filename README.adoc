@@ -1,5 +1,13 @@
 = Jakarta NoSQL and Data with MongoDB
 
+== Topics for today:
+
+* Why do we care about data?
+** History (useless information, sorry, but I love history)
+* Challenges on Data
+* Jakarta NoSQL
+* Jakarta Data
+* Show me the code
 
 
 * Install docker: https://www.docker.com/
