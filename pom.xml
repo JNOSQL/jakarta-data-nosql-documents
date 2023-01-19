@@ -60,7 +60,7 @@
         </dependency>
         <dependency>
             <groupId>org.eclipse.jnosql.mapping</groupId>
-            <artifactId>jnosql-arangodb-extension</artifactId>
+            <artifactId>jnosql-mongodb-extension</artifactId>
             <version>${jnosql.version}</version>
         </dependency>
     </dependencies>
