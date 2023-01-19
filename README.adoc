@@ -1,5 +1,6 @@
 = Jakarta NoSQL and Data with MongoDB
 
+@otaviojava
 == Topics for today:
 
 * Why do we care about data?
@@ -9,6 +10,14 @@
 * Jakarta NoSQL
 * Jakarta Data
 * Show me the code
+
+== Jakarta NoSQL
+
+image::jakarta-nosql.gif[Jakarta NoSQL]
+
+== Jakarta Data
+
+image::jakarta-data.gif[Data]
 
 == Start the code
 
