@@ -20,7 +20,7 @@ import java.util.Collections;
 import java.util.List;
 
 
-public class App {
+public class KeyValueApp {
 
     public static void main(String[] args) {
 
@@ -39,6 +39,6 @@ public class App {
         System.exit(0);
     }
 
-    private App() {
+    private KeyValueApp() {
     }
 }
