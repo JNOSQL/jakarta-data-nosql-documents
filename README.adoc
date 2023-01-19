@@ -27,3 +27,10 @@ image::jakarta-data.gif[Data]
 * Run docker command
 ** `docker run -d --name mongodb-instance -p 27017:27017 mongo`
 * Execute the test `mvn clean verify`
+
+== References
+
+* https://jakarta.ee/specifications/nosql/[Jakarta NoSQL]
+* https://jakarta.ee/specifications/data/[Jakarta Data]
+* https://microprofile.io/[Eclipse Microprofile]
+* https://jakarta.ee/[Jakarta EE]
