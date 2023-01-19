@@ -10,9 +10,9 @@
  */
 package org.jnosql.demo.se;
 
-import jakarta.nosql.mapping.Column;
-import jakarta.nosql.mapping.Entity;
-import jakarta.nosql.mapping.Id;
+import jakarta.nosql.Column;
+import jakarta.nosql.Entity;
+import jakarta.nosql.Id;
 
 import java.io.Serializable;
 import java.util.Collections;
@@ -91,12 +91,12 @@ public class Hero implements Serializable {
 
     @Override
     public String toString() {
-        final StringBuilder sb = new StringBuilder("Hero{");
-        sb.append("name='").append(name).append('\'');
-        sb.append(", realName='").append(realName).append('\'');
-        sb.append(", age=").append(age);
-        sb.append(", powers=").append(powers);
-        sb.append('}');
-        return sb.toString();
+        return "Hero{" +
+                "id='" + id + '\'' +
+                ", name='" + name + '\'' +
+                ", realName='" + realName + '\'' +
+                ", age=" + age +
+                ", powers=" + powers +
+                '}';
     }
 }
