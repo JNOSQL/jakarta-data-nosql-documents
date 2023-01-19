@@ -13,6 +13,5 @@
 * Install docker: https://www.docker.com/
 * https://hub.docker.com/r/couchbase/server/
 * Run docker command
-** `docker run -e ARANGO_NO_AUTH=1 -d --name arangodb-instance -p 8529:8529 -d arangodb/arangodb:3.9.7`
-* Check: `http://localhost:8529
+** `docker run -d --name mongodb-instance -p 27017:27017 mongo`
 * Execute the test `mvn clean verify`
