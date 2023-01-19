@@ -19,12 +19,12 @@ public class App2 {
 
             template.insert(first);
             Book second = first.newEdition("effective-2", Year.of(2015));
+
             Book third = second.newEdition("effecite-3", Year.of(2019));
-//         ystem.out.println("The book result is: " + book);
-            List<Book> effectives = template.select(Book.class).where("title").eq("Effective Java")
+            List<Book> books = template.select(Book.class).where("title").eq("Effective Java")
                     .orderBy("edition").desc().limit(1).result();
 
-            System.out.println("The effective books: " + effectives);
+            System.out.println("The effective books: " + books);
 
         }
     }
