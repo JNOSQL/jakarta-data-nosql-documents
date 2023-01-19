@@ -9,7 +9,6 @@ import java.time.Year;
 @Entity
 public record Book(@Id String id,
                    @Column("title") String title,
-                   @Column("author") String author,
                    @Column("category") String category,
                    @Column("year") Year year,
                    @Column("edition") int edition) {

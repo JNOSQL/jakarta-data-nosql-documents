@@ -13,12 +13,12 @@ public class BookApp {
     public static void main(String[] args) {
         try (SeContainer container = SeContainerInitializer.newInstance().initialize()) {
             Template template = container.select(DocumentTemplate.class).get();
-            Book effectiveJava = new Book("effective-java-2","Effective Java", "Joshua Block", "Java",
+            Book effectiveJava = new Book("effective-java-1","Effective Java", "Java",
                     Year.of(2018), 3);
 
-            template.update(effectiveJava);
+            template.insert(effectiveJava);
 
-            List<Book> books = template.select(Book.class).where("id").eq("effective-java").result();
+            List<Book> books = template.select(Book.class).where("id").eq("effective-java-1").result();
             books.forEach(System.out::println);
         }
     }
