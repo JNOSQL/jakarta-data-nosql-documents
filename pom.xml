@@ -9,13 +9,14 @@
   ~ You may elect to redistribute this code under either of these licenses.
   -->
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.eclipse.jnosql.demo</groupId>
     <artifactId>arangodb</artifactId>
     <version>1.0.0-SNAPSHOT</version>
-    <name>JNoSQL Demo using Java SE arangodb</name>
+    <name>JNoSQL Demo using Java SE Documents</name>
+    <description>A sample of NoSQL databases </description>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
@@ -27,7 +28,7 @@
         <jakarta.json.version>2.1.1</jakarta.json.version>
         <tinkerpop.version>3.6.1</tinkerpop.version>
         <weld.se.core.version>5.1.0.Final</weld.se.core.version>
-        <jnosql.version>1.0.0-b6-SNAPSHOT</jnosql.version>
+        <jnosql.version>1.0.1</jnosql.version>
         <yasson.version>3.0.2</yasson.version>
         <smallrye.config.version>3.1.1</smallrye.config.version>
     </properties>
@@ -59,8 +60,8 @@
             <version>${smallrye.config.version}</version>
         </dependency>
         <dependency>
-            <groupId>org.eclipse.jnosql.mapping</groupId>
-            <artifactId>jnosql-mongodb-extension</artifactId>
+            <groupId>org.eclipse.jnosql.databases</groupId>
+            <artifactId>jnosql-mongodb</artifactId>
             <version>${jnosql.version}</version>
         </dependency>
     </dependencies>
