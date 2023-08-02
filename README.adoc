@@ -35,16 +35,16 @@ image::jakarta-data.gif[Data]
 == Couchbase Configuration
 
 1. Access: http://localhost:8091/ui/index.html
-1. Select the option "Setup New Cluster"
-1. Define "root" as Admin username
-1. Define "123456" as Password
-1. Define "localhost" as Cluster Name
-1. Accept the terms and conditions
-1. Go to "Buckets" session
-1. Create Bucket "beers" using the "Add Bucket" Option
-1. Click at "beers"
-1. Add "Hero" and "Villain" as Collection
-1. Go to Query session and execute: CREATE PRIMARY INDEX #primary ON factory._default.beer
+2. Select the option "Setup New Cluster"
+3. Define "root" as Admin username
+4. Define "123456" as Password
+5. Define "localhost" as Cluster Name
+6. Accept the terms and conditions
+7. Go to "Buckets" session
+8. Create Bucket "beers" using the "Add Bucket" Option
+9. Click at "beers"
+10. Add "Hero" and "Villain" as Collection
+11. Go to Query session and execute: CREATE PRIMARY INDEX #primary ON factory._default.beer
 
 
 == References
