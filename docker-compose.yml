@@ -1,22 +1,22 @@
 version: '3'
 services:
-  mongodb-instance:
+  mongodb-db:
     image: mongo
-    container_name: mongodb-instance
+    container_name: mongodb-db
     ports:
       - "27017:27017"
 
-  arangodb-instance:
+  arangodb-db:
     image: arangodb/arangodb
-    container_name: arangodb-instance
+    container_name: arangodb-db
     environment:
       - ARANGO_NO_AUTH=1
     ports:
       - "8529:8529"
 
-  couchbase-instance:
+  couchbase-db:
     image: couchbase
-    container_name: couchbase-instance
+    container_name: couchbase-db
     ports:
       - "8091-8097:8091-8097"
       - "9123:9123"
