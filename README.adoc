@@ -44,7 +44,7 @@ image::jakarta-data.gif[Data]
 8. Create Bucket "pokemons" using the "Add Bucket" Option
 9. Click at "pokemons"
 10. Add "Pokemon" as Collection
-11. Go to Query session and execute: `CREATE PRIMARY INDEX #primary ON pokemons._default.pokemon`
+11. Go to Query session and execute: `CREATE PRIMARY INDEX primaryPokemon ON pokemons._default.Pokemon`
 
 
 == References
