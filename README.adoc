@@ -47,6 +47,11 @@ image::jakarta-data.gif[Data]
 11. Go to Query session and execute: `CREATE PRIMARY INDEX primaryPokemon ON pokemons._default.Pokemon`
 
 
+== UI query
+
+* http://localhost:8529/
+* http://localhost:8091/
+
 == References
 
 * https://jakarta.ee/specifications/nosql/[Jakarta NoSQL]
