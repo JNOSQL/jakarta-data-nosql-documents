@@ -8,7 +8,7 @@ import jakarta.nosql.Id;
 import java.util.UUID;
 
 @Entity
-public record Pokemon (@Id String id,@Column String name,@Column String location){
+public record Pokemon(@Id String id, @Column String name,@Column String location) {
 
 
     public static Pokemon of(Faker faker){

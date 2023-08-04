@@ -3,7 +3,8 @@ package org.jnosql.demo.se;
 import com.github.javafaker.Faker;
 import jakarta.enterprise.inject.se.SeContainer;
 import jakarta.enterprise.inject.se.SeContainerInitializer;
-import jakarta.nosql.document.DocumentTemplate;
+import jakarta.nosql.PreparedStatement;
+import org.eclipse.jnosql.mapping.DatabaseQualifier;
 import org.eclipse.jnosql.mapping.document.JNoSQLDocumentTemplate;
 
 public class App2 {
@@ -12,17 +13,18 @@ public class App2 {
 
         Faker faker = new Faker();
         try (SeContainer container = SeContainerInitializer.newInstance().initialize()) {
-            JNoSQLDocumentTemplate template = container.select(JNoSQLDocumentTemplate.class).get();
+
+            PokemonRepository repository = container.
+                    select(PokemonRepository.class, DatabaseQualifier.ofDocument())
+                    .get();
+
             for (int index = 0; index < 100; index++) {
                 Pokemon pokemon = Pokemon.of(faker);
-                template.insert(pokemon);
+                repository.save(pokemon);
             }
-            template.query("select * from Pokemon").forEach(System.out::println);
 
-            template.prepare("select * from Pokemon where name = @name")
-                    .bind("name", "Pikachu")
-                    .result()
-                    .forEach(System.out::println);
+            repository.findByName("Pikachu").forEach(System.out::println);
+
 
         }
 
