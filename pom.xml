@@ -28,7 +28,7 @@
         <jakarta.json.version>2.1.1</jakarta.json.version>
         <tinkerpop.version>3.6.1</tinkerpop.version>
         <weld.se.core.version>5.1.0.Final</weld.se.core.version>
-        <jnosql.version>1.0.1</jnosql.version>
+        <jnosql.version>1.0.2</jnosql.version>
         <yasson.version>3.0.2</yasson.version>
         <smallrye.config.version>3.1.1</smallrye.config.version>
     </properties>
