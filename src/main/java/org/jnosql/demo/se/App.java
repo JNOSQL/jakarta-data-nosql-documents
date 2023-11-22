@@ -1,12 +1,11 @@
 package org.jnosql.demo.se;
 
-import com.github.javafaker.Faker;
-import com.github.javafaker.HowIMetYourMother;
 import jakarta.enterprise.inject.se.SeContainer;
 import jakarta.enterprise.inject.se.SeContainerInitializer;
 import jakarta.nosql.PreparedStatement;
 import jakarta.nosql.Template;
 import jakarta.nosql.document.DocumentTemplate;
+import net.datafaker.Faker;
 import org.eclipse.jnosql.mapping.document.JNoSQLDocumentTemplate;
 
 import java.util.List;

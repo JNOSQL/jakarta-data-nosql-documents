@@ -27,10 +27,10 @@
         <jakarta.json.version>2.1.1</jakarta.json.version>
         <jakarta.json.version>2.1.1</jakarta.json.version>
         <tinkerpop.version>3.6.1</tinkerpop.version>
-        <weld.se.core.version>5.1.0.Final</weld.se.core.version>
-        <jnosql.version>1.0.1</jnosql.version>
-        <yasson.version>3.0.2</yasson.version>
-        <smallrye.config.version>3.1.1</smallrye.config.version>
+        <weld.se.core.version>5.1.2.Final</weld.se.core.version>
+        <jnosql.version>1.0.2</jnosql.version>
+        <yasson.version>3.0.3</yasson.version>
+        <smallrye.config.version>3.4.1</smallrye.config.version>
     </properties>
 
     <dependencies>
@@ -38,16 +38,6 @@
             <groupId>org.jboss.weld.se</groupId>
             <artifactId>weld-se-shaded</artifactId>
             <version>${weld.se.core.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>jakarta.json</groupId>
-            <artifactId>jakarta.json-api</artifactId>
-            <version>${jakarta.json.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>jakarta.json.bind</groupId>
-            <artifactId>jakarta.json.bind-api</artifactId>
-            <version>${jakarta.json.bind.version}</version>
         </dependency>
         <dependency>
             <groupId>org.eclipse</groupId>
@@ -75,9 +65,9 @@
             <version>${jnosql.version}</version>
         </dependency>
         <dependency>
-            <groupId>com.github.javafaker</groupId>
-            <artifactId>javafaker</artifactId>
-            <version>1.0.2</version>
+            <groupId>net.datafaker</groupId>
+            <artifactId>datafaker</artifactId>
+            <version>2.0.2</version>
         </dependency>
     </dependencies>
 
