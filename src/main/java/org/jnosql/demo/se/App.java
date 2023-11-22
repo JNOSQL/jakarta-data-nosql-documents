@@ -3,13 +3,10 @@ package org.jnosql.demo.se;
 import jakarta.enterprise.inject.se.SeContainer;
 import jakarta.enterprise.inject.se.SeContainerInitializer;
 import jakarta.nosql.PreparedStatement;
-import jakarta.nosql.Template;
-import jakarta.nosql.document.DocumentTemplate;
+
 import net.datafaker.Faker;
 import org.eclipse.jnosql.mapping.document.JNoSQLDocumentTemplate;
 
-import java.util.List;
-import java.util.Optional;
 
 public class App {
 
